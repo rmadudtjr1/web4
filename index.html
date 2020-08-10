@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="scripts/jquery-3.5.1.min.js" ></script>
+  <script src="scripts/script.js"></script>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+  body,h1,h2,h3,h4,h5,input,button,article {font-family: "Raleway", sans-serif}
+  </style>
+  <title>My Blog - Main</title>
+</head>
+<body onload="loadList();">
+  <header id="header">
+  <h1 id="headerH1"><a href="index.html">My Blog</a></h1>
+  <h2 id="headerH2">Welcome to the blog of <span id="author">unknown</span></h2>
+  </header>
+  <section id="index_section">
+    <div id="write">  
+      <input type="text" id="write_input" placeholder="Write your new post!">
+      <button id="write_button" onclick="moveToWrite()">+</button>
+    </div>
+    <article id="art"> 
+      <!-- 동적구현 -->
+    </article>
+  </section>
+  <footer>
+  <div id="widget">
+    <span>local : <span id="city"></span></span>
+    <span>temp : <span id="temperature-celcius"></span></span>   			
+    <span>wetness : <span id='humidity'></span></span>
+    <span>weather : <span id='overall'></span></span>
+  </div>
+    <h5>Powered by KG itbank</h5>
+  </footer>
+</body>
+</html>
